@@ -30,6 +30,7 @@ const flightSchema = new Schema({
       return date
     },
   },
-}, { timestamps: true })
+}, { timestamps: true 
+});
 
 const Flight = mongoose.model('Flight', flightSchema)
