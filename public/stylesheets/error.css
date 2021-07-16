@@ -1,0 +1,38 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+} 
+:root {
+  --colorMain: #c0c0c0;
+  --brShadow: -6px 6px 15px rgba(0,0,0,0.5);
+  --tlShadow: 6px -6px 15px rgba(255,255,255,0.8);
+}
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background: var(--colorMain);
+  margin: 0;
+}
+
+h1, h2 {
+  color: var(--colorMain);
+  font-size: 10em;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-shadow: var(--brShadow), 
+               var(--tlShadow);
+}
+
+pre {
+  text-align: left;
+  margin: 5em;
+  color: gray;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-shadow: var(--brShadow), 
+               var(--tlShadow);
+
+}
+
