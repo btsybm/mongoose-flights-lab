@@ -3,7 +3,17 @@ import { Flight } from '../models/flight.js'
 export {
   newFlight as new,
   create,
-  index
+  index,
+  show,
+}
+
+function show(req, res) {
+  Flight.findById(req.params.id, function (err, flight) {
+    res.render('flights/show', { 
+      title: 'Flight Details', 
+      flight: flight,
+    })
+  })
 }
 
 function create(req, res) {
