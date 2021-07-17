@@ -5,6 +5,17 @@ export {
   create,
   index,
   show,
+  createTicket,
+}
+
+function createTicket(req, res) {
+  Flight.findById(req.params.id)
+  .then(flight => {
+      flight.tickets.push(req.body)
+      flight.save()
+      .then(result => res.redirect(`/flights/${flight._id}`))
+      .catch(err => console.log(err))
+  })
 }
 
 function show(req, res) {
