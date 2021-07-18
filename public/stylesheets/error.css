@@ -1,38 +1,41 @@
+* {
+  background-image: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+  color: rgb(221, 237, 247);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-  background: #5E887C;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
 h1 {
-  font-size: 5em;
-  color: transparent;                                         
-  background-color: #666666;
-         -webkit-background-clip: text;
-         -moz-background-clip: text;
+  font-size: 8em; 
+  font-weight: bolder;                                      
+  /* background-color: #24243e;
          background-clip: text;
-         text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+         text-shadow: rgba(38, 90, 153, 0.5) 0px 3px 3px; */
   text-transform: uppercase;
+  color: #5c5c80;
+  text-shadow: 0 15px 10px #11102B,0 -5px 4px #11102B;
+  letter-spacing: -4px;
 }
 
 h2 {
   font-size: 3em;
-  color: transparent;                                         
-  background-color: #666666;
-         -webkit-background-clip: text;
-         -moz-background-clip: text;
-         background-clip: text;
-         text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+  color: #5c5c80;                                         
   text-transform: uppercase;
 }
 
 pre {
   text-align: left;
-  margin: 5em;
-  color: black;
+  color: rgba(255, 255, 255, 0.653);
   font-size: 12px;
   font-weight: bold;
+  background-image: none;
+  position: absolute;
+  bottom: 0px;
 }
 
 
