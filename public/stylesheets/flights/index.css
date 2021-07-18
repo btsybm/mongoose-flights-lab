@@ -1,10 +1,12 @@
 table {
   font-size: 2rem;
+  background-image: none;
 }
 
 table thead th {
   padding: 5px;
   border-bottom: 2px solid #424748;
+  background-image: none;
 }
 
 table td {
@@ -34,3 +36,4 @@ table td {
 #list a:hover, button:hover {
   background-color: white;
 }
+

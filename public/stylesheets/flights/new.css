@@ -3,17 +3,33 @@ form {
   grid-gap: 10px;
   grid-template-columns: repeat(2, minmax(auto, 35.2rem));
   font-size: 2rem;
+  background-image: none;
 }
 
 form * {
   padding: 5px;
   border-radius: 5px;
   font-size: 2rem;
+  background-image: none;
 }
 
 form > button {
   grid-column: span 2;
-  width: 16rem;
-  margin-left: auto;
-  font-size: 2.2rem;
+  width: 18rem;
+  margin-top: 4px;
+  margin-left: 5px;
+  font-size: 2.5rem;
+  color: rgba(255, 166, 0, 0.803);
+  background-image: linear-gradient(to right, #0f0c29, #0f0c29);
+}
+
+input, textarea {
+  background-color: rgba(255, 166, 0, 0.803);
+  margin-left: 4px;
+}
+
+select{
+  background-color: rgba(255, 166, 0, 0.803);
+  color:#fff;
+  margin-left: 4px;
 }
