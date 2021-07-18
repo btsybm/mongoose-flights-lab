@@ -2,6 +2,7 @@ import { Destination } from "../models/destination.js"
 
 export {
   newDestination,
+  create,
 }
 
 function newDestination(req, res) {
@@ -12,4 +13,10 @@ function newDestination(req, res) {
   .catch(err => {
       console.log(err)
   })
+}
+
+function create(req, res) {
+  Destination.create(req.body)
+  .then(result => res.redirect("/destinations/new"))
+  .catch(err => console.log(err))
 }
