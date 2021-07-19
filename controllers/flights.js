@@ -7,6 +7,16 @@ export {
   index,
   show,
   createTicket,
+  addToDestinations,
+}
+
+function addToDestinations(req, res) {
+  Flight.findById(req.params.id)
+  .then(flight => {
+      flight.destinations.push(req.body.destinationId)
+      flight.save()
+      .then(result => res.redirect(`/flights/${flight._id}`))
+  })
 }
 
 function createTicket(req, res) {
