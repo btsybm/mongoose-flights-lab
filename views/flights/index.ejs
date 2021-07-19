@@ -1,10 +1,11 @@
 <%- include('../partials/head.ejs') %> 
+<link rel='stylesheet' href='/stylesheets/flights/index.css' />
 </head>
 <%- include("../partials/nav.ejs") %> 
 
 <main>
   <h1><%= title %></h1>
-  <table>
+  <table class='table'>
     <thead>
       <tr>
         <th>Airline</th>
@@ -14,7 +15,7 @@
         <th>Details:</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody >
       <% flights.forEach(f => { %>
         <tr>
           <td><%= f.airline %></td>

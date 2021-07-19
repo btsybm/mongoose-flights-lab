@@ -9,6 +9,10 @@ table thead th {
   background-image: none;
 }
 
+.table {
+  background-image: none;
+}
+
 table td {
   padding: 10px;
   text-align: center;
@@ -21,7 +25,6 @@ table td {
 
 #list a, button {
   border-radius: 4px;
-  background-color: #b8c0c2;
   padding: 4px;
   text-decoration: none;
   font-size: 1.6rem;
