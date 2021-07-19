@@ -1,6 +1,7 @@
 table {
   font-size: 2rem;
   background-image: none;
+  background-color: white;
 }
 
 table thead th {
@@ -39,4 +40,3 @@ table td {
 #list a:hover, button:hover {
   background-color: white;
 }
-
